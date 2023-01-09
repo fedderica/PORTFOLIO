@@ -36,7 +36,18 @@ body {
   color: rgb(0, 0, 0);
 
 }
+ 
+  .imgperfil {
+    transition: all 0.8% ease;
+  }
 
+ .imgperfil:hover {
+  cursor:pointer;
+  filter: grayscale(1);
+  transition: all 0.6% ease;
+  
+}
+ 
 .menu {
   display: flex;
   width: 50%;
