@@ -299,35 +299,37 @@ background: url(../img/FONDO.gif);
   box-shadow: none;
 }
 .footer {
- font-family: 'Open Sans', sans-serif;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- width: 100vw;
-height: 200px;
-background-color: rgba(110, 231, 219, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  padding: 2em;
+  background-image: url(../img/FONDO.gif);
+  opacity: 90% ;
 }
 
-.footer-content{
+.footer-content h2 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 3em;
-  color: #fabdd9;
-
 }
 
-.footer-content h5,
-.sotial-network i {
+.footer-content h5 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
-color: rgb(250, 250, 250);
-background-image: url(/img/FONDO.gif);
-opacity: calc(90%);
-}
-.sotial-network {
+  text-align: center;
   color: #000000;
+}
+
+.sotial-networks {
   display: flex;
   justify-content: space-evenly;
   width: 300px;
   margin-top: 1em;
-  
+}
+
+.sotial-networks i {
+  font-size: 1.5em;
 }
 
