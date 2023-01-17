@@ -8,14 +8,13 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://kit.fontawesome.com/c6613ba55b.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="wrapper">
-<header>
 <nav class="navbar">
-  <div class="brand">
+  <div class="brand" data-aos="flip-up">
   <h2> F <span> B </span></h2>
   </div>
   <ul class="menu">
@@ -32,7 +31,7 @@
 
 <a name="info-content" id="info-content"></a>
 <main class="main">
-<div class="info-content">
+<div class="info-content"   data-aos="flip-left">
 <h1>I'm <span>Federica</span> Bartto </h1>
 <p> Hello friends!! 👋👋 My name is Federica, I live in Argentina and I am on the way to finish the Full Stack Web Developer career👩‍🎓!!! This openness to new technologies motivates me to learn something new every day. I take various courses that allow me to increase my skills, working and incorporating new knowledge. My first bases; HTML. Css. JavaScript along with GIT. Do not give. js are my guides. And not only that, but I have studied three years at the University of Art (UNLP) to give color and creativity to all my projects ✍ 🤩 🎨​🎆​. Passionate about digital media and social networks. I consider myself a very cheerful, enthusiastic person, eager to grow; contribute my knowledge creativity and joy.</p>
  <a download="" href="#">
@@ -40,7 +39,9 @@
  <button class="download-cv"> Download CV </button>
 </a>
 </div>
-<div class="imgperfil">
+<div class="imgperfil"  data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
 <img src="./img/My project-1.png" alt="ME">
 </main>
 </div>
@@ -49,7 +50,9 @@
 <a name="about" id="about"></a>
 <div class="about">
 <img src="./img/about.jpg" alt="fede" id="animado">
-<div class="about-info">
+<div class="about-info" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
   <a name="about" id="about"></a>
 <h2>About me</h2>
 <a name="portfolio" id="about"></a>
@@ -89,20 +92,23 @@ Teaching English as a Foreign Language
 </div>
 </div>
 
-<div class="portfolio"> 
+<div class="portfolio" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"> 
 <div class="portfolio-headings">
    <h2>My portfolio</h2>
    <div class="divider"> </div>
 </div>
  <a name="portfolio" id="portfolio"></a>  
-<div class="container">
+<div class="container" data-aos="zoom-out">
   <div class="card"> 
     <div class="card__img">
     </div>
     <div class="card__title">
      <h2> Project </h2> 
   </div>
-  <div class="card__projects-links">
+  <div class="card__projects-links" data-aos="flip-left">
+     
     <a href="https://github.com/fedderica" target="_blank"> 
     <i class="fa-brands fa-github"></i>
   </a>
@@ -113,7 +119,7 @@ Teaching English as a Foreign Language
     <i class="fa-solid fa-code"></i>
   </a>
   </div>
-  <div class="proyect-details-content">
+  <div class="proyect-details-content"  data-aos="flip-down">
   <button class="project-details download-cv">
       <a href="">
          Project details  
@@ -124,13 +130,13 @@ Teaching English as a Foreign Language
 
   
   
-  <div class="card"> 
+  <div class="card" data-aos="zoom-in-right">
     <div class="card__img">
     </div>
     <div class="card__title">
      <h2>      Project   </h2> 
   </div>
-  <div class="card__projects-links">
+  <div class="card__projects-links" data-aos="zoom-in-left">
     <a href="https://github.com/fedderica" target="_blank"> 
     <i class="fa-brands fa-github"></i>
   </a>
@@ -141,7 +147,7 @@ Teaching English as a Foreign Language
     <i class="fa-solid fa-code"></i>
   </a>
   </div>
-  <div class="proyect-details-content">
+  <div class="proyect-details-content" data-aos="fade-up"  data-aos-duration="3000">
   <button class="project-details download-cv">
       <a href="https://github.com/fedderica/PORTFOLIO">
          Project details  
@@ -188,7 +194,7 @@ Teaching English as a Foreign Language
 
 <div class="container-contact">
   
-<div class="contact-form">
+<div class="contact-form" data-aos="zoom-out-down">
   <h4> </h4>
 <form class="form"> 
   <input type="text" placeholder="Name">
@@ -213,7 +219,8 @@ Teaching English as a Foreign Language
     Frontend Developer
     </h5>
   </div>
-  <div class="sotial-network"> 
+  <div class="sotial-network" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"> 
     <i class="fa-brands fa-instagram"></i>
     <a href="https://www.linkedin.com/in/federica-barttoli-7b8554213/" target="_blank">
     <i class="fa-brands fa-linkedin">  </i>
@@ -221,5 +228,10 @@ Teaching English as a Foreign Language
   </div>
   
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
